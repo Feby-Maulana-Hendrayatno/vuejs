@@ -1,0 +1,161 @@
+<template>
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> 
+    <div class="site-navbar-wrap">
+      <div class="site-navbar site-navbar-target js-sticky-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-2">
+              <h1 class="my-0 site-logo">
+                <a href="index.html" class="navbar-brand" >
+                    <img src="images/Logo.png" alt="..." height="36">
+                </a>
+              </h1>
+            </div>
+            <div class="col-10">
+              <nav class="site-navigation text-right" role="navigation">
+                <div class="container">
+                  <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
+                    <a href="#" class="site-menu-toggle js-menu-toggle text-white">
+                      <span class="icon-menu h3">
+                      </span>
+                    </a>
+                  </div>
+                  <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
+                    <li class="active"><a href="#home-section" class="nav-link">Beranda</a></li>
+                    <li><a href="#classes-section" class="nav-link">Tentang Kami</a></li>
+                    <li><a href="#about-section" class="nav-link">Layanan</a></li>
+                    <li><a href="#events-section" class="nav-link">Produk</a></li>
+                    <li><a href="#contact-section" class="nav-link">Contact Us</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <div class="py-0 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h4  class="text-center">
+            <span id="Perencanaan">Perencanaan </span>
+            <span style="color:#FF2A2A;">Strategi</span>       
+          </h4>
+          <p class="lead Perusahaan-IT">
+            Perusahaan IT yang bergerak di bidang jasa Penyedia sistem aplikasi & Pengembangan software house yang sudah bekerja sama dengan Bank-Bank Besar.  
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- <div class="card"> -->
+            <img class="rounded mx-auto d-block" src="./assets/Icon.png" alt="">
+            <div class="card-body text-center">
+              <p class="card-text">
+                Technology Constantly improve, to provide the best solution
+              </p>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="col">
+          <!-- <div class="card"> -->
+            <img class="rounded mx-auto d-block" src="./assets/Icon.png"  width="70" height="70" >
+            <div class="card-body">
+              <p class="card-text text-center">
+                  We don’t sell you a product. We sell you a solution
+              </p>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="col">
+          <!-- <div class="card"> -->
+            <img class="rounded mx-auto d-block" src="./assets/Icon.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text text-center">Speed and quality is our motto</p>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </template>
+  
+  
+  
+  
+  <style>
+  #app {
+    /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+    /* font-family: Montserrat; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    /* color: #2c3e50; */
+  }
+  
+  
+  
+  
+  
+  p.lead.Perusahaan-IT{
+    color: #4D4D4F;
+     font-weight: 380;
+    /*
+  font-size: 20px;
+  line-height: 30px;
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em; */
+  }
+  
+  
+  
+  
+  
+  </style>
+  
+  <style scoped>
+    @import "css/navbar.css";
+    @import "assets/js/jquery-3.3.1.min.js";
+    @import "assets/js/popper.min.js";
+    @import "assets/js/bootstrap.min.js";
+    @import "assets/js/jquery.sticky.js";
+    @import "assets/js/main.js";
+  </style>
+  
