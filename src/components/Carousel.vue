@@ -118,7 +118,7 @@ export default {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    background-color: #6347c7;
+    background-color: #447B92;
     color: #fff;
   }
 }
@@ -134,15 +134,15 @@ export default {
 
   span {
     cursor: pointer;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #fff;
+    width: 150px;
+    height: 10px;
+    // border-radius: 50%;
+    background-color: #ACDBEF;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
 
   .active {
-    background-color: #6347c7;
+    background-color: #FFFFFF;
   }
 }
 </style>
