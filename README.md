@@ -1,10 +1,10 @@
 # qjual
 
-## Made by Feby Maulana
-
+Made by Feby Maulana
+```
 
 ## Project setup
-```
+
 npm install
 ```
 
