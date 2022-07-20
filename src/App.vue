@@ -169,7 +169,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
 
 .carousel {
   position: relative;
-  max-height: 100vh;
+  max-height: 95vh;
   height: 100vh;
 
   .slide-info {
@@ -183,6 +183,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
     img {
       min-width: 100%;
       height: 100%;
+        // height: 600px;
       // object-fit: cover;
     }
   }
