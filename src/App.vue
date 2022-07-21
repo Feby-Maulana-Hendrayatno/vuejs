@@ -36,6 +36,7 @@
     </nav>
   </header>
   
+
   <div class="home">
     <Carousel
       :navigation="true"
@@ -52,6 +53,141 @@
       </Slide>
     </Carousel>
   </div>
+
+
+
+
+
+  <div class="container">
+    <h4  class="text-center">
+      <span id="Perencanaan">Spesialisasi </span>
+      <span style="color:#FF2A2A;">Kami</span>       
+    </h4>
+    <br>
+    <div class="row mb-3">
+      <div class="col-md-8 themed-grid-col">
+          <div class="d-flex text-align-left" style="text-align:justify;">
+            Jaring adalah perusahaan IT yang bergerak di bidang jasa penyedia sistem aplikasi, Pengembangan software house, E-Ticketing, Pencatatan Transaksi Digital, Penyedia Mesin TAP EDC/Bus Validator yang sudah bekerja sama dengan Bank-Bank Besar. Dengan mengedepankan integritas, kami akan selalu memberikan jasa terbaik di setiap pekerjaan yang kami lakukan. Jaring selalu bersemangat dalam menciptakan berdasarkan kebutuhan klien dengan komitmen yang tinggi dan kami juga bisa menjadi solusi bagi perusahaan penerbit uang/uang digital yang ingin mengembangkan dan menambahkan transaksi dari seluruh jaringan retail yang bekerjasama dengan kami.      
+          </div>
+        </div>
+      <div class="col-md-4 themed-grid-col">
+        <img class="rounded mx-auto d-block" src="./assets/meeting.png"  width="100%" height="100%" >
+      </div>
+    </div>
+  </div>
+<br>
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-md-4 themed-grid-col">
+        <div class="d-flex bd-highlight">
+            <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
+              <img src="./assets/sosmed-payment.png" alt="..." width="70" height="70" >
+            </div>
+            <div class="p-2 w-100 bd-highlight">
+              <h5 class="text-danger">
+                Pembayaran Digital
+              </h5>
+              <p>
+                Transaksi menggunakan berbagai macam metode pembayaran
+              </p>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4 themed-grid-col">
+        <div class="d-flex bd-highlight">
+          <div class="p-2 flex-shrink-1 bd-highlight">
+            <img src="./assets/ipaymu_service_edcpos.png" alt="..." width="70" height="70"  >
+          </div>
+          <div class="p-2 w-100 bd-highlight">
+            <h5 class="text-danger">
+              EDC-POS
+            </h5>
+            <p>
+              Transaksi lebih mudah dengan menggunakan terminal EDC POS
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 themed-grid-col">
+        <div class="d-flex bd-highlight">
+          <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
+            <img src="./assets/ipaymu_service_store.png" alt="..." width="70" height="70" >
+          </div>
+          <div class="p-2 w-100 bd-highlight">
+            <h5 class="text-danger">
+              Convenience Stores
+            </h5>
+            <p>
+              Sediakan pembayaran melalui Indomaret dan Alfamart pada bisnis Anda  
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="row mb-4">
+      <div class="col-md-4 themed-grid-col">
+        <div class="d-flex bd-highlight">
+            <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
+              <img src="./assets/qrish.png" alt="..." width="70" height="70" >
+            </div>
+            <div class="p-2 w-100 bd-highlight">
+              <h5 class="text-danger">
+                QRIS
+              </h5>
+              <p>
+                1 QRCode Untuk Semua e-wallet
+              </p>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4 themed-grid-col">
+        <div class="d-flex bd-highlight">
+          <div class="p-2 flex-shrink-1 bd-highlight">
+            <img src="./assets/ipaymu_service_va.png" alt="..." width="70" height="70"  >
+          </div>
+          <div class="p-2 w-100 bd-highlight">
+            <h5 class="text-danger">
+              Instant VA
+            </h5>
+            <p>
+              Pembayaran VA dan transfer bank lebih mudah untuk 140 Bank
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 themed-grid-col">
+        <div class="d-flex bd-highlight">
+          <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
+            <img src="./assets/ipaymu_service_credit_card.png" alt="..." width="70" height="70" >
+          </div>
+          <div class="p-2 w-100 bd-highlight">
+            <h5 class="text-danger">
+              Kartu Kredit
+            </h5>
+            <p>
+              Opsi pembayaran yang komprehensif kepada customer Anda. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
 
 
 
@@ -120,6 +256,24 @@
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </template>
 
 
@@ -184,10 +338,11 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
       min-width: 100%;
       height: 100%;
         // height: 600px;
-      // object-fit: cover;
+      object-fit: cover;
     }
   }
 }
+
 
 
 
