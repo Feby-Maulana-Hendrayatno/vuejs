@@ -56,8 +56,8 @@
 
 
 
-
-
+<div class="background">
+  
   <div class="container">
     <h4>
       <span id="Perencanaan">Spesialisasi </span>
@@ -222,6 +222,25 @@
 
     </div>
   </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- End Background -->
+
+
+
+
 
   <div class="container">
     <div class="row">
@@ -442,7 +461,10 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
 
 
 
-
+.background {
+  background-color: #FEFEFE;
+    // background-color: #F6F6F6;
+}
 
 
 
