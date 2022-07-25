@@ -59,7 +59,7 @@
 
 
   <div class="container">
-    <h4  class="text-center">
+    <h4>
       <span id="Perencanaan">Spesialisasi </span>
       <span style="color:#FF2A2A;">Kami</span>       
     </h4>
@@ -85,13 +85,12 @@
 
 
 
-
   <div class="container">
-    <div class="row mb-4">
+    <div class="row mb-4" >
       <div class="col-md-4 themed-grid-col">
         <div class="d-flex bd-highlight">
             <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
-              <img src="./assets/sosmed-payment.png" alt="..." width="70" height="70" >
+              <img src="./assets/sosmed-payment.png" alt="..." width="110" height="75"  >
             </div>
             <div class="p-2 w-100 bd-highlight">
               <h5 class="text-danger">
@@ -106,7 +105,7 @@
       <div class="col-md-4 themed-grid-col">
         <div class="d-flex bd-highlight">
           <div class="p-2 flex-shrink-1 bd-highlight">
-            <img src="./assets/ipaymu_service_edcpos.png" alt="..." width="70" height="70"  >
+            <img src="./assets/ipaymu_service_edcpos.png" alt="..." width="110" height="75"  >
           </div>
           <div class="p-2 w-100 bd-highlight">
             <h5 class="text-danger">
@@ -121,7 +120,7 @@
       <div class="col-md-4 themed-grid-col">
         <div class="d-flex bd-highlight">
           <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
-            <img src="./assets/ipaymu_service_store.png" alt="..." width="70" height="70" >
+            <img src="./assets/ipaymu_service_store.png" alt="..." width="110" height="75"  >
           </div>
           <div class="p-2 w-100 bd-highlight">
             <h5 class="text-danger">
@@ -140,7 +139,7 @@
       <div class="col-md-4 themed-grid-col">
         <div class="d-flex bd-highlight">
             <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
-              <img src="./assets/qrish.png" alt="..." width="70" height="70" >
+              <img src="./assets/qrish.png" alt="..." width="110" height="75" >
             </div>
             <div class="p-2 w-100 bd-highlight">
               <h5 class="text-danger">
@@ -155,7 +154,7 @@
       <div class="col-md-4 themed-grid-col">
         <div class="d-flex bd-highlight">
           <div class="p-2 flex-shrink-1 bd-highlight">
-            <img src="./assets/ipaymu_service_va.png" alt="..." width="70" height="70"  >
+            <img src="./assets/ipaymu_service_va.png" alt="..." width="110" height="75"  >
           </div>
           <div class="p-2 w-100 bd-highlight">
             <h5 class="text-danger">
@@ -170,7 +169,7 @@
       <div class="col-md-4 themed-grid-col">
         <div class="d-flex bd-highlight">
           <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
-            <img src="./assets/ipaymu_service_credit_card.png" alt="..." width="70" height="70" >
+            <img src="./assets/ipaymu_service_credit_card.png" alt="..." width="110" height="75" >
           </div>
           <div class="p-2 w-100 bd-highlight">
             <h5 class="text-danger">
@@ -209,7 +208,7 @@
         <p class="lead Perusahaan-IT">
           Perusahaan IT yang bergerak di bidang jasa Penyedia sistem aplikasi & Pengembangan software house yang sudah bekerja sama dengan Bank-Bank Besar.  
         </p>
-      </div>
+      </div>  
 
       <div class="container">
         <h4  class="text-center">
@@ -238,7 +237,7 @@
       </div>
       <div class="col">
         <!-- <div class="card"> -->
-          <img class="rounded mx-auto d-block" src="./assets/Icon.png"  width="70" height="70" >
+          <img class="rounded mx-auto d-block" src="./assets/Icon.png"  width="70" height="70 " >
           <div class="card-body">
             <p class="card-text text-center">
                 We don’t sell you a product. We sell you a solution
@@ -256,6 +255,105 @@
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+  <section class="gallery min-vh-100">
+    <div class="container-lg">
+      <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+          <div class="col">
+            <img src="./assets/wildlife_animal.png" class="gallery-item" alt="gallery" height="420px">
+            <h4 class="text-danger ">
+              WILDLIFE ANIMAL
+            </h4>
+            <p>
+              Website
+            </p>
+          </div>
+          <div class="col">
+            <img src="./assets/fi_mobile.png" class="gallery-item" alt="gallery" height="420px">
+            <h4 class="text-danger">
+              FI MOBILE
+            </h4>
+            <p>
+              Mobile
+            </p>
+          </div>
+          <div class="col">
+            <img src="./assets/always_taylor.png" class="gallery-item" alt="gallery" height="420px">
+            <h4 class="text-danger ">
+              ALWAYS TAILOR
+            </h4>
+            <p style="font-size: 100">
+              Website
+            </p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assets/wildlife_animal.png" class="modal-img" alt="modal img">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 
 
@@ -298,7 +396,9 @@
 
 
 
-
+container.background{
+  background-color: #4D4D4F
+}
 
 p.lead.Perusahaan-IT{
   color: #4D4D4F;
@@ -350,12 +450,11 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
 
 
 
-
 </style>
 
 <style scoped>
   @import "css/carousel.css";
-    /* @import "css/nicepage.css"; */
+  @import "css/project.css";
 </style>
 
 
@@ -363,6 +462,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
 <script>
 import Carousel from "./components/Carousel.vue";
 import Slide from "./components/Slide.vue";
+
 
 export default {
   name: "Home",
@@ -373,4 +473,9 @@ export default {
     return { carouselSlides };
   },
 };
+
+
+  
+
+
 </script>
