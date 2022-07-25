@@ -86,7 +86,7 @@
 
 
   <div class="container">
-    <div class="row mb-4" >
+    <div class="row mb-4">
       <div class="col-md-4 themed-grid-col">
         <div class="d-flex bd-highlight">
             <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
@@ -277,8 +277,7 @@
 
 
 
-<br>
-<br>
+
   <section class="gallery min-vh-100">
     <div class="container-lg">
       <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
@@ -396,9 +395,7 @@
 
 
 
-container.background{
-  background-color: #4D4D4F
-}
+
 
 p.lead.Perusahaan-IT{
   color: #4D4D4F;
@@ -442,6 +439,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
     }
   }
 }
+
 
 
 
