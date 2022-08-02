@@ -19,7 +19,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="nav-link">Tentang Kami</a>
+              <a href="tentang_kami" class="nav-link">Tentang Kami</a>
             </li>
             <li>
               <a href="#" class="nav-link">Layanan</a>
@@ -60,7 +60,7 @@
   
   <div class="container">
     <h4>
-      <span id="Perencanaan">Spesialisasi </span>
+      <span id="spesialisasi">Spesialisasi </span>
       <span style="color:#FF2A2A;">Kami</span>       
     </h4>
     <br>
@@ -298,11 +298,15 @@
 
 
   <section class="gallery min-vh-100">
+    <h4 style="margin-left: 50px; margin-bottom: 20px;">
+      <span id="proyek">Proyek</span>
+      <span style="color:#FF2A2A;">Kami</span>   
+    </h4>
     <div class="container-lg">
       <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
           <div class="col">
-            <img src="./assets/wildlife_animal.png" class="gallery-item" alt="gallery" height="420px">
-            <h4 class="text-danger ">
+            <img src="./assets/wildlife_animal.png" class="gallery-item" alt="gallery"  >
+            <h4 class="text-danger responsive-font-example">
               WILDLIFE ANIMAL
             </h4>
             <p>
@@ -310,8 +314,8 @@
             </p>
           </div>
           <div class="col">
-            <img src="./assets/fi_mobile.png" class="gallery-item" alt="gallery" height="420px">
-            <h4 class="text-danger">
+            <img src="./assets/fi_mobile.png" class="gallery-item" alt="gallery"  >
+            <h4 class="text-danger responsive-font-example">
               FI MOBILE
             </h4>
             <p>
@@ -319,8 +323,8 @@
             </p>
           </div>
           <div class="col">
-            <img src="./assets/always_taylor.png" class="gallery-item" alt="gallery" height="420px">
-            <h4 class="text-danger ">
+            <img src="./assets/always_taylor.png" class="gallery-item" alt="gallery"  >
+            <h4 class="text-danger responsive-font-example">
               ALWAYS TAILOR
             </h4>
             <p style="font-size: 100">
@@ -470,14 +474,41 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
 
 
 
+@media screen and (max-width: 600px) {
+  .container {
+    font-size: 15px;
+  }
+
+  .container.row.col.h
+  {
+    font-size: 10px;
+  }
+}
+
+
+//font
+// @media (min-width: 1200px) {
+//   .responsive-font-example {
+//     font-size: 20px;
+//     font-weight: bold;
+//   }
+// }
+
+// @media (max-width: 1199.98px) {
+//   .responsive-font-example {
+//     font-size: 20px;
+//   }
+// }
+// end font
+
+
+
 </style>
 
 <style scoped>
   @import "css/carousel.css";
   @import "css/project.css";
 </style>
-
-
 
 <script>
 import Carousel from "./components/Carousel.vue";
