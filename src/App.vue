@@ -96,7 +96,7 @@
               <h5 class="text-danger">
                 Pembayaran Digital
               </h5>
-              <p>
+              <p >
                 Transaksi menggunakan berbagai macam metode pembayaran
               </p>
             </div>
@@ -264,6 +264,8 @@
     </div>
   </div>
 
+<br>
+<br>
 
 
 
@@ -278,24 +280,17 @@
 
 
 
-
-
-
-
-
-
-
-
-  <section class="gallery min-vh-100">
-    
-    <div class="container-lg" data-aos="zoom-out">
+  <section class="gallery min-vh-100" >
+    <!-- <div class="container" data-aos="zoom-out">   -->
       <h4 style="margin-left: 50px; margin-bottom: 20px;">
-        <span id="proyek">Proyek </span>
-        <span style="color:#FF2A2A;">Kami</span>   
+        <span id="proyek"  data-aos="zoom-out">Proyek </span>
+        <span style="color:#FF2A2A;"  data-aos="zoom-out">Kami</span>   
       </h4>
+    <!-- </div> -->
+    <div class="container-lg">
       <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
           <div class="col">
-            <img src="./assets/wildlife_animal.png" class="gallery-item" alt="gallery"  >
+            <img src="./assets/wildlife_animal.png" class="gallery-item" alt="gallery"  data-aos="zoom-out">
             <h4 class="text-danger responsive-font-example">
               WILDLIFE ANIMAL
             </h4>
@@ -304,7 +299,7 @@
             </p>
           </div>
           <div class="col">
-            <img src="./assets/fi_mobile.png" class="gallery-item" alt="gallery"  >
+            <img src="./assets/fi_mobile.png" class="gallery-item" alt="gallery"  data-aos="zoom-out">
             <h4 class="text-danger responsive-font-example">
               FI MOBILE
             </h4>
@@ -313,7 +308,7 @@
             </p>
           </div>
           <div class="col">
-            <img src="./assets/always_taylor.png" class="gallery-item" alt="gallery"  >
+            <img src="./assets/always_taylor.png" class="gallery-item" alt="gallery"  data-aos="zoom-out">
             <h4 class="text-danger responsive-font-example">
               ALWAYS TAILOR
             </h4>
