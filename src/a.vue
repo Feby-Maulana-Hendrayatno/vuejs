@@ -59,7 +59,7 @@
 <div class="background">
   
   <div class="container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-    <h4>
+    <h4 >
       <span id="spesialisasi">Spesialisasi </span>
       <span style="color:#FF2A2A;">Kami</span>       
     </h4>
@@ -70,7 +70,7 @@
             Jaring adalah perusahaan IT yang bergerak di bidang jasa penyedia sistem aplikasi, Pengembangan software house, E-Ticketing, Pencatatan Transaksi Digital, Penyedia Mesin TAP EDC/Bus Validator yang sudah bekerja sama dengan Bank-Bank Besar. Dengan mengedepankan integritas, kami akan selalu memberikan jasa terbaik di setiap pekerjaan yang kami lakukan. Jaring selalu bersemangat dalam menciptakan berdasarkan kebutuhan klien dengan komitmen yang tinggi dan kami juga bisa menjadi solusi bagi perusahaan penerbit uang/uang digital yang ingin mengembangkan dan menambahkan transaksi dari seluruh jaringan retail yang bekerjasama dengan kami.      
           </div>
         </div>
-      <div class="col-md-4 themed-grid-col">
+      <div class="col-md-4 themed-grid-col" >
         <img class="rounded mx-auto d-block" src="./assets/meeting.png"  width="100%" height="100%" >
       </div>
     </div>
@@ -87,10 +87,10 @@
 
   <div class="container">
     <div class="row mb-4">
-      <div class="col-md-4 themed-grid-col">
+      <div class="col-md-4 themed-grid-col" >
         <div class="d-flex bd-highlight">
-            <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
-              <img src="./assets/sosmed-payment.png" alt="..." width="110" height="75"  data-aos="flip-right">
+            <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block" data-aos="flip-right">
+              <img src="./assets/sosmed-payment.png" alt="..." width="110" height="75"  >
             </div>
             <div class="p-2 w-100 bd-highlight">
               <h5 class="text-danger">
@@ -104,8 +104,8 @@
       </div>
       <div class="col-md-4 themed-grid-col">
         <div class="d-flex bd-highlight">
-          <div class="p-2 flex-shrink-1 bd-highlight">
-            <img src="./assets/ipaymu_service_edcpos.png" alt="..." width="110" height="75"  data-aos="flip-right">
+          <div class="p-2 flex-shrink-1 bd-highlight" data-aos="flip-right">
+            <img src="./assets/ipaymu_service_edcpos.png" alt="..." width="110" height="75"  >
           </div>
           <div class="p-2 w-100 bd-highlight">
             <h5 class="text-danger">
@@ -119,8 +119,8 @@
       </div>
       <div class="col-md-4 themed-grid-col">
         <div class="d-flex bd-highlight">
-          <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
-            <img src="./assets/ipaymu_service_store.png" alt="..." width="110" height="75" data-aos="flip-right" >
+          <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block" data-aos="flip-right">
+            <img src="./assets/ipaymu_service_store.png" alt="..." width="110" height="75"  >
           </div>
           <div class="p-2 w-100 bd-highlight">
             <h5 class="text-danger">
@@ -138,8 +138,8 @@
     <div class="row mb-4">
       <div class="col-md-4 themed-grid-col">
         <div class="d-flex bd-highlight">
-            <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
-              <img src="./assets/qrish.png" alt="..." width="110" height="75" data-aos="flip-right">
+            <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block" data-aos="flip-right">
+              <img src="./assets/qrish.png" alt="..." width="110" height="75" >
             </div>
             <div class="p-2 w-100 bd-highlight">
               <h5 class="text-danger">
@@ -153,8 +153,8 @@
       </div>
       <div class="col-md-4 themed-grid-col">
         <div class="d-flex bd-highlight">
-          <div class="p-2 flex-shrink-1 bd-highlight">
-            <img src="./assets/ipaymu_service_va.png" alt="..." width="110" height="75"  data-aos="flip-right">
+          <div class="p-2 flex-shrink-1 bd-highlight" data-aos="flip-right">
+            <img src="./assets/ipaymu_service_va.png" alt="..." width="110" height="75"  >
           </div>
           <div class="p-2 w-100 bd-highlight">
             <h5 class="text-danger">
@@ -168,8 +168,8 @@
       </div>
       <div class="col-md-4 themed-grid-col">
         <div class="d-flex bd-highlight">
-          <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
-            <img src="./assets/ipaymu_service_credit_card.png" alt="..." width="110" height="75" data-aos="flip-right">
+          <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block" data-aos="flip-right">
+            <img src="./assets/ipaymu_service_credit_card.png" alt="..." width="110" height="75" >
           </div>
           <div class="p-2 w-100 bd-highlight">
             <h5 class="text-danger">
@@ -199,7 +199,7 @@
 
 
   <div class="py-4 text-center container">
-    <!-- <div class="row py-lg-5"> -->
+    <div class="row py-lg-5">
       <div class="container">
         <h4  class="text-center">
           <span id="Perencanaan">Perencanaan </span>
@@ -209,12 +209,16 @@
           Perusahaan IT yang bergerak di bidang jasa Penyedia sistem aplikasi & Pengembangan software house yang sudah bekerja sama dengan Bank-Bank Besar.  
         </p>
       </div>
-    <!-- </div> -->
+
+    </div>
   </div>
+
+
 </div>
+
+
 <br>
-
-
+<br>
 
 
 
@@ -229,8 +233,11 @@
 
 
 
-  <div class="container">
-    <div class="row">
+  <div class="container" >
+    <div class="row"  data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500">
       <div class="col">
         <!-- <div class="card"> -->
           <img class="rounded mx-auto d-block" src="./assets/Icon.png" alt="">
@@ -278,18 +285,22 @@
 
 
 
+<br>
+<br>
 
 
 
 
 
-
-  <section class="gallery min-vh-100">
-    <h4 style="margin-left: 50px; margin-bottom: 20px;">
-      <span id="proyek">Proyek</span>
+  <!-- <section class="gallery min-vh-100 animate__animated animate__fadeInLeft"> -->
+    <section class="gallery min-vh-100 animate__animated animate__fadeInLeft" >
+    <!-- animate__bounceInRight -->
+    
+    <div class="container-lg" data-aos="zoom-out">
+      <h4 style="margin-left: 50px; margin-bottom: 20px;">
+      <span id="proyek">Proyek </span>
       <span style="color:#FF2A2A;">Kami</span>   
     </h4>
-    <div class="container-lg">
       <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
           <div class="col">
             <img src="./assets/wildlife_animal.png" class="gallery-item" alt="gallery"  >
@@ -360,27 +371,12 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0">
+     <p>sasasasy</p>
+</div>
 </template>
 
 
@@ -495,6 +491,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
 <style scoped>
   @import "css/carousel.css";
   @import "css/project.css";
+  /* @import 'animate.css'; */
 </style>
 
 <script>
@@ -510,14 +507,16 @@ export default {
 
     return { carouselSlides };
   },
-
+  
   created ( ) {
   AOS.init()
   }
+  
 };
 
 
-  
 
+
+  
 
 </script>
