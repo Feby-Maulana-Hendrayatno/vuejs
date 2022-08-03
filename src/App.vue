@@ -200,7 +200,8 @@
 
   <div class="py-4 text-center container">
     <!-- <div class="row py-lg-5"> -->
-      <div class="container">
+      <div class="container" data-aos="fade-up"
+     data-aos-duration="800">
         <h4  class="text-center">
           <span id="Perencanaan">Perencanaan </span>
           <span style="color:#FF2A2A;">Strategi</span>       
@@ -230,7 +231,8 @@
 
 
   <div class="container">
-    <div class="row">
+    <div class="row" data-aos="fade-down"
+     data-aos-duration="800">
       <div class="col">
         <!-- <div class="card"> -->
           <img class="rounded mx-auto d-block" src="./assets/Icon.png" alt="">
@@ -285,11 +287,12 @@
 
 
   <section class="gallery min-vh-100">
-    <h4 style="margin-left: 50px; margin-bottom: 20px;">
-      <span id="proyek">Proyek</span>
-      <span style="color:#FF2A2A;">Kami</span>   
-    </h4>
-    <div class="container-lg">
+    
+    <div class="container-lg" data-aos="zoom-out">
+      <h4 style="margin-left: 50px; margin-bottom: 20px;">
+        <span id="proyek">Proyek </span>
+        <span style="color:#FF2A2A;">Kami</span>   
+      </h4>
       <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
           <div class="col">
             <img src="./assets/wildlife_animal.png" class="gallery-item" alt="gallery"  >
