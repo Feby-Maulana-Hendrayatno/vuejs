@@ -379,6 +379,65 @@
 
 
 
+
+<div class="container">
+  <table class="table table-hover">
+    <thead>
+        <tr>
+          <th class="col" > # </th>
+          <th class="col" > deskripsi_cp </th>
+          <th class="col" > judul_cp </th>
+          <th class="col" > Foto </th>
+        </tr>
+    </thead>
+    <tbody v-for="contact in contacts" :key="contact.id">
+      <tr class="table-secondary">
+        <th scope="row"> {{contact.id}} </th>
+        <th>
+          <img :src="contact.deskripsi_cp" width="200">
+        </th>
+          
+<th scope="row"> {{contact.judul_cp}} </th>
+        <th scope="row"> {{}} </th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </template>
 
 
@@ -499,6 +558,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
 import Carousel from "./components/Carousel.vue";
 import Slide from "./components/Slide.vue";
 import AOS from 'aos'
+import axios from 'axios';
 
 export default {
   name: "Home",
@@ -510,8 +570,34 @@ export default {
   },
 
   created ( ) {
-  AOS.init()
-  }
+  AOS.init();
+  this.getContacts();
+  },
+
+  name: 'ContactList',
+  data(){
+    return{
+      contacts:Array
+    }
+  },
+
+  methods: {
+    async getContacts(){
+        let url = 'http://127.0.0.1:8000/api/contacts';
+        await axios.get(url).then(response => {
+        this.contacts = response.data.contacts;
+        console.log(this.contacts);
+      }).catch(error => {
+        console.log(error);
+      });
+    }
+  },
+
+  mounted() {
+    console.log('Contact List Component mounted')
+  },
+
+
 };
 
 
