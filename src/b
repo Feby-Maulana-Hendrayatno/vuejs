@@ -393,23 +393,28 @@
 
         </tr>
     </thead>
-    <tbody v-for="contact in contacts" :key="contact.id">
+    <tbody v-for="contact in contacts" :key="contact.nama_portfolio">
       <tr class="table-secondary">
         
-        <th scope="row"> {{contact.id}} </th>        
+        <!-- <th scope="row"> {{contact.id}} </th>         -->
         <!-- <th>
           <img :src="getFotoContact()" width="200">
         </th> -->
+        <!-- <th>
+          <img :src="contact.foto" width="200">
+        </th> -->
+        <!-- http://127.0.0.1:8000/storage/ -->
         <th>
           <img :src="contact.foto" width="200">
         </th>
-        <!-- http://127.0.0.1:8000/storage/ -->
-        
+
+
+
         
         <th scope="row"> {{contact.foto}} </th>
-        <th scope="row"> {{contact.nama_perumahan}} </th>
-        <th scope="row"> {{contact.alamat}} </th>
-        <th scope="row"> {{contact.uraian}} </th>
+        <th scope="row"> {{contact.nama_portfolio}} </th>
+        <th scope="row"> {{contact.id_kategori}} </th>
+        <th scope="row"> {{contact.warna}} </th>
         
       </tr>
     </tbody>
@@ -589,14 +594,25 @@ export default {
   name: 'ContactList',
   data(){
     return{
-      contacts: []
+      contacts:Array
     }
   },
 
   methods: {
-     getContacts(){
+    // async getContacts(){
+    //     // let url = 'http://127.0.0.1:8000/api/contacts';
+    //             let url = 'http://127.0.0.1:8000/api/perumahan/';
+    //     await axios.get(url).then(response => {
+    //     this.contacts = response.data.contacts;
+    //     console.log(this.contacts);
+    //   }).catch(error => {
+    //     console.log(error);
+    //   });
+    // },
+
+    getContacts(){
         // let url = 'http://127.0.0.1:8000/api/contacts';
-                let url = 'http://192.168.60.32:8000/api/perumahan';
+                let url = 'http://192.168.60.207:2404/api/portfolio';
         axios.get(url).then(response => {
         this.contacts = response.data;
         console.log(this.contacts);
@@ -604,6 +620,7 @@ export default {
         console.log(error);
       });
     },
+
 
      getFotoContact(){
       return 'http://127.0.0.1:8000/api/perumahan/';
