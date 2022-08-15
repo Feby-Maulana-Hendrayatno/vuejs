@@ -37,18 +37,6 @@
   </header>
   
 
-
-
-
-
-
-
-
-
-
-
-
-
   <div class="home">
     <Carousel
       :navigation="true"
@@ -58,14 +46,63 @@
       class="carousel"
       v-slot="{ currentSlide }"
     >
-      
-      <!-- <Slide v-for="(slide, index) in carouselSlides" :key="index"> -->
-              <Slide v-for="(slide, index) in carouselSlides" :key="index">
+      <Slide v-for="(slide, index) in carouselSlides" :key="index">
         <div v-show="currentSlide === index + 1" class="slide-info">
           <img :src="require(`./assets/${slide}.jpg`)" alt="" />
         </div>
       </Slide>
     </Carousel>
+  </div>
+
+
+
+<div class="background">
+  
+  <div class="container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+    <h4>
+      <span id="spesialisasi">Spesialisasi </span>
+      <span style="color:#FF2A2A;">Kami</span>       
+    </h4>
+    <br>
+    <div class="row mb-3" v-for="ttg in tentangKami" :key="ttg.id">
+      <div class="col-md-8 themed-grid-col">
+          <div class="d-flex text-align-left" style="text-align:justify;">
+            {{ttg.deskripsi}}
+          </div>
+        </div>
+      <div class="col-md-4 themed-grid-col">
+        <img :src="ttg.foto" class="rounded mx-auto d-block">
+      </div>
+    </div>
+  </div>
+<br>
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <div class="row mb-4" >
+      <div class="col-md-4 themed-grid-col" v-for="lyn in layanan" :key="lyn.id">
+        <div class="d-flex bd-highlight">
+          <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
+            <img :src="lyn.icon" alt="..." width="110" height="75"  data-aos="flip-right">
+          </div>
+          <div class="p-2 w-100 bd-highlight">
+            <h5 class="text-danger">
+              {{lyn.nm_layanan}}
+            </h5>
+            <p >
+              {{lyn.deskripsi}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
@@ -82,75 +119,111 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="background">
-  
-  <TentangKami />
-  <br>
-  <Layanan />
-  <PerencanaanStrategi />
+  <div class="py-4 text-center container">
+    <!-- <div class="row py-lg-5"> -->
+      <div class="container" data-aos="fade-up" data-aos-duration="800" v-for="cp in contacts" :key="cp.id">
+        <h4  class="text-center">
+          <span id="Perencanaan">Perencanaan </span>
+          <span style="color:#FF2A2A;">Strategi</span>       
+        </h4>
+        <p class="lead Perusahaan-IT">
+          {{cp.judul_cp}}
+        </p>
+      </div>
+    <!-- </div> -->
+  </div>
 </div>
 <br>
+
+
+
+
+
+
+
+
+
+
 <!-- End Background -->
-<Footers />
-<div class="container">
-        <div class="row" >
-            <div class="col" v-for="foot1 in carousel" :key="foot1.id" data-aos="fade-down" data-aos-duration="800">
-            <img :src="foot1.foto"  class="rounded mx-auto d-block"  width="70" height="70 " >
-                <div class="card-body">
-                    <p class="card-text text-center">
-                    {{foot1.foto}}
-                    </p>
-                </div>
-            </div>
+
+
+
+
+
+  <div class="container">
+    <div class="row" >
+      <div class="col" v-for="foot in footer" :key="foot.id" data-aos="fade-down" data-aos-duration="800">
+        <img :src="foot.icon" class="rounded mx-auto d-block"  width="70" height="70 " >
+        <div class="card-body">
+          <p class="card-text text-center">
+            {{foot.deskripsi_footer}}
+          </p>
         </div>
+      </div>
     </div>
+  </div>
+
 <br>
 <br>
-<div class="container">
-        <div class="row" >
-            <div class="col" v-for="foot in footer" :key="foot.id" data-aos="fade-down" data-aos-duration="800">
-            <img :src="foot.icon" class="rounded mx-auto d-block"  width="70" height="70 " >
-                <div class="card-body">
-                    <p class="card-text text-center">
-                    {{foot.deskripsi_footer}}
-                    </p>
-                </div>
-            </div>
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="gallery min-vh-100" >
+    <!-- <div class="container" data-aos="zoom-out">   -->
+      <h4 style="margin-left: 50px; margin-bottom: 20px;">
+        <span id="proyek"  data-aos="zoom-out">Proyek </span>
+        <span style="color:#FF2A2A;"  data-aos="zoom-out">Kami</span>   
+      </h4>
+    <!-- </div> -->
+    <div class="container-lg">
+      <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3" >
+          <div class="col" v-for="prd in produk" :key="prd.id"> 
+            <img :src="prd.foto_prdk" class="gallery-item" alt="gallery"  data-aos="zoom-out">
+            <h4 class="text-danger responsive-font-example">
+              {{prd.nm_proyek}}
+            </h4>
+            <p>
+              {{prd.device}}
+            </p>
+          </div>
+      </div>
     </div>
-<Produk />
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -165,7 +238,7 @@
       </div>
     </div>
   </div>
-</div> 
+</div>
 
 <br>
 
@@ -288,34 +361,12 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
 <script>
 import Carousel from "./components/Carousel.vue";
 import Slide from "./components/Slide.vue";
-import Produk from "@/components/page/Produk.vue";
-import TentangKami from "@/components/page/TentangKami.vue";
-import Footers from "@/components/page/Footer.vue";
-import PerencanaanStrategi from "@/components/page/PerencanaanStrategi.vue";
-import Layanan from "@/components/page/Layanan.vue";
-import AOS from 'aos' 
+import AOS from 'aos'
 import axios from 'axios';
 
 export default {
-    data(){
-        return{
-        // footer:Array,
-        carousel:Array
-        }
-    },
-    
   name: "Home",
-  components: {
-    Carousel, 
-    Slide,
-    Produk,
-    TentangKami,
-    Footers,
-    PerencanaanStrategi,
-    Layanan,
-  },
-
-
+  components: { Carousel, Slide },
   setup() {
     const carouselSlides = ["qjual_1", "qjual_2", "qjual_3"];
 
@@ -324,11 +375,25 @@ export default {
 
   created ( ) {
     AOS.init();
-    // this.getFooter();
-    // this.getCarousel();
+    this.getContacts();
+    this.getTentangKami();
+    this.getLayanan();
+    this.getProduk();
+    this.getFooter();
   },
 
-    methods: {
+  name: 'ContactList',
+  data(){
+    return{
+      contacts:Array,
+      tentangKami:Array,
+      layanan:Array,
+      produk:Array,
+      footer:Array,
+    }
+  },
+
+  methods: {
     async getContacts(){
         let url = 'http://127.0.0.1:8000/api/contacts';
         await axios.get(url).then(response => {
@@ -360,9 +425,9 @@ export default {
     },
 
 
-    getProduk(){
+    async getProduk(){
         let url = 'http://127.0.0.1:8000/api/produk/';
-        axios.get(url).then(response => {
+        await axios.get(url).then(response => {
         this.produk = response.data.produk;
         console.log(this.produk);
       }).catch(error => {
@@ -379,20 +444,9 @@ export default {
       }).catch(error => {
         console.log(error);
       });
-    },
-
-    async getCarousel(){
-        let url = 'http://127.0.0.1:8000/api/carousel/';
-        await axios.get(url).then(response => {
-        this.footer = response.data.footer;
-        console.log(this.footer);
-      }).catch(error => {
-        console.log(error);
-      });
     }
   
   },
- 
 
 
   

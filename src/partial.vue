@@ -37,18 +37,6 @@
   </header>
   
 
-
-
-
-
-
-
-
-
-
-
-
-
   <div class="home">
     <Carousel
       :navigation="true"
@@ -58,9 +46,7 @@
       class="carousel"
       v-slot="{ currentSlide }"
     >
-      
-      <!-- <Slide v-for="(slide, index) in carouselSlides" :key="index"> -->
-              <Slide v-for="(slide, index) in carouselSlides" :key="index">
+      <Slide v-for="(slide, index) in carouselSlides" :key="index">
         <div v-show="currentSlide === index + 1" class="slide-info">
           <img :src="require(`./assets/${slide}.jpg`)" alt="" />
         </div>
@@ -70,52 +56,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="background">
-  
   <TentangKami />
   <br>
   <Layanan />
@@ -123,33 +64,9 @@
 </div>
 <br>
 <!-- End Background -->
-<Footers />
-<div class="container">
-        <div class="row" >
-            <div class="col" v-for="foot1 in carousel" :key="foot1.id" data-aos="fade-down" data-aos-duration="800">
-            <img :src="foot1.foto"  class="rounded mx-auto d-block"  width="70" height="70 " >
-                <div class="card-body">
-                    <p class="card-text text-center">
-                    {{foot1.foto}}
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+<Footers />    
 <br>
 <br>
-<div class="container">
-        <div class="row" >
-            <div class="col" v-for="foot in footer" :key="foot.id" data-aos="fade-down" data-aos-duration="800">
-            <img :src="foot.icon" class="rounded mx-auto d-block"  width="70" height="70 " >
-                <div class="card-body">
-                    <p class="card-text text-center">
-                    {{foot.deskripsi_footer}}
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
 <Produk />
 
 
@@ -165,7 +82,7 @@
       </div>
     </div>
   </div>
-</div> 
+</div>
 
 <br>
 
@@ -297,13 +214,6 @@ import AOS from 'aos'
 import axios from 'axios';
 
 export default {
-    data(){
-        return{
-        // footer:Array,
-        carousel:Array
-        }
-    },
-    
   name: "Home",
   components: {
     Carousel, 
@@ -312,7 +222,7 @@ export default {
     TentangKami,
     Footers,
     PerencanaanStrategi,
-    Layanan,
+    Layanan
   },
 
 
@@ -324,11 +234,9 @@ export default {
 
   created ( ) {
     AOS.init();
-    // this.getFooter();
-    // this.getCarousel();
   },
 
-    methods: {
+  methods: {
     async getContacts(){
         let url = 'http://127.0.0.1:8000/api/contacts';
         await axios.get(url).then(response => {
@@ -379,20 +287,9 @@ export default {
       }).catch(error => {
         console.log(error);
       });
-    },
-
-    async getCarousel(){
-        let url = 'http://127.0.0.1:8000/api/carousel/';
-        await axios.get(url).then(response => {
-        this.footer = response.data.footer;
-        console.log(this.footer);
-      }).catch(error => {
-        console.log(error);
-      });
     }
   
   },
- 
 
 
   
