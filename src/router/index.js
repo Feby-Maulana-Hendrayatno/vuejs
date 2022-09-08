@@ -10,9 +10,9 @@ const routes = [
   },
 
   {
-    path: '/tentang_kami',
-    name: 'tentang_kami',
-    component: () => import('../components/page/TentangKami.vue')
+    path: '/spesialisasi_kami',
+    name: 'spesialisasi_kami',
+    component: () => import('../components/page/SpesialisasiKami.vue')
   },
   {
     path: '/layanan',

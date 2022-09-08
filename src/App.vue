@@ -143,7 +143,7 @@
 
 <div class="background">
   
-  <TentangKami />
+  <SpesialisasiKami />
   <br>
   <br><br>
   <Layanan  />
@@ -288,7 +288,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
 import Carousel from "./components/Carousel.vue";
 import Slide from "./components/Slide.vue";
 import Produk from "@/components/page/Produk.vue";
-import TentangKami from "@/components/page/TentangKami.vue";
+import SpesialisasiKami from "@/components/page/SpesialisasiKami.vue";
 import Footers from "@/components/page/Footer.vue";
 import PerencanaanStrategi from "@/components/page/PerencanaanStrategi.vue";
 import Layanan from "@/components/page/Layanan.vue";
@@ -310,7 +310,7 @@ export default {
     Carousel, 
     Slide,
     Produk,
-    TentangKami,
+    SpesialisasiKami,
     Footers,
     PerencanaanStrategi,
     Layanan,
@@ -345,8 +345,8 @@ export default {
     async getTentangKami(){
         let url = 'http://127.0.0.1:8000/api/tentang/';
         await axios.get(url).then(response => {
-        this.tentangKami = response.data.tentangKami;
-        console.log(this.tentangKami);
+        this.SpesialisasiKami = response.data.SpesialisasiKami;
+        console.log(this.SpesialisasiKami);
       }).catch(error => {
         console.log(error);
       });

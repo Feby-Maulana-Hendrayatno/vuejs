@@ -31,7 +31,7 @@ export default {
         this.getTentangKami();
     },
 
-    name: 'TentangKami',
+    name: 'SpesialisasiKami',
     data(){
         return{
         tentangKami:Array,
@@ -41,7 +41,7 @@ export default {
     methods: {
 
     getTentangKami(){
-        let url = 'http://127.0.0.1:8000/api/tentang/';
+        let url = 'http://127.0.0.1:8000/api/spesialisasi/';
         axios.get(url).then(response => {
         this.tentangKami = response.data.tentangKami;
         console.log(this.tentangKami);
