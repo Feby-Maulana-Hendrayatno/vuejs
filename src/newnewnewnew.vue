@@ -46,7 +46,7 @@
 
 
 
-<!-- 
+
   <div class="home">
     <Carousel
       :navigation="true"
@@ -63,7 +63,52 @@
         </div>
       </Slide>
     </Carousel>
-  </div> -->
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -73,29 +118,19 @@
 
 
 <main>
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel"  >
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" v-for="cr in carousel" :key="cr.id" >
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner" style="height:620px" margin="10px">
-      <div class="carousel-item active" v-for="cr in carousel" :key="cr.id">
-        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-        <img :src="cr.foto" style="height:620px;" >
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
         <div class="container">
-          <div class="carousel-caption text-end" >
-            <img :src="cr.icon" style="height:80px; " class="text-start">
-            <div class="container">
-              <div class="row">
-                <div class="col-8"> &nbsp</div>
-                <div class="col-4"><p>{{cr.deksripsi}}</p></div>
-                <!-- <div class="col-lg-2">
-                  <p> {{cr.deksripsi}}</p>
-                </div> -->
-              </div>
-            </div>
-            <p><a :href="cr.link" class="btn btn-lg btn-primary">{{cr.nm_link}}</a></p>
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
           </div>
         </div>
       </div>
@@ -133,14 +168,6 @@
 
 
 
-
-
-
-
-
-
-
-
 <div class="background">
   
   <TentangKami />
@@ -152,8 +179,6 @@
 <br>
 <!-- End Background -->
 <Footers />
-<br>
-<br>
 <Produk />
 
 <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -277,6 +302,8 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
 // }
 // end font
 
+
+
 </style>
 
 <style scoped>
@@ -385,7 +412,7 @@ export default {
     },
 
     async getCarousel(){
-        let url = 'http://127.0.0.1:8000/api/carousel1/';
+        let url = 'http://127.0.0.1:8000/api/carousel/';
         await axios.get(url).then(response => {
         this.carousel = response.data.carousel;
         console.log(this.carousel);
@@ -393,7 +420,9 @@ export default {
         console.log(error);
       });
     }
+  
   },
+ 
 
 
   

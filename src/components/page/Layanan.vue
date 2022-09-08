@@ -1,26 +1,31 @@
 <template>
-    <div class="container">
-        <div class="row mb-4" >
-            <div class="col-md-4 themed-grid-col" v-for="lyn in layanan" :key="lyn.id">
-                <div class="d-flex bd-highlight">
-                    <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
-                        <img :src="lyn.icon" alt="..." width="110" height="75"  data-aos="flip-right">
-                    </div>
-                    <div class="p-2 w-100 bd-highlight">
-                        <h5 class="text-danger">
-                            {{lyn.nm_layanan}}
-                        </h5>
-                        <p>
-                            {{lyn.deskripsi}}
-                        </p>
+    <section>
+        <div class="container">
+            <div class="row mb-4" id="layanan">
+                <div class="col-md-4 themed-grid-col" v-for="lyn in layanan" :key="lyn.id">
+                    <div class="d-flex bd-highlight">
+                        <div class="p-2 flex-shrink-1 bd-highlight rounded mx-auto d-block">
+                            <img :src="lyn.icon" alt="..." width="110" height="75"  data-aos="flip-right">
+                        </div>
+                        <div class="p-2 w-100 bd-highlight">
+                            <h5 class="text-danger" style=" font-weight: 10; font-size: 23px;">
+                                {{lyn.nm_layanan}}
+                            </h5>
+                            <p style=" font-weight: 10; font-size: 17px;">
+                                {{lyn.deskripsi}}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div>    
+    </section>
 </template>
 
+<style>
 
+
+</style>
 
 <script>
 import AOS from 'aos' 

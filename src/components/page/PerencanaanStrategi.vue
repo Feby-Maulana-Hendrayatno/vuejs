@@ -1,10 +1,11 @@
 <template>
-    <div class="py-4 text-center container">
+    <div class="py-4 text-center container" id="perencanaan_strategi">
     <!-- <div class="row py-lg-5"> -->
         <div class="container" data-aos="fade-up" data-aos-duration="800" v-for="cp in contacts" :key="cp.id">
             <h4  class="text-center">
-                <span id="Perencanaan">Perencanaan </span>
-                <span style="color:#FF2A2A;">Strategi</span>       
+                <!-- <span id="Perencanaan">Perencanaan </span>
+                <span style="color:#FF2A2A;">Strategi</span>        -->
+                <h2 style="color:#000000; font-weight: bold;">Tentang Kami</h2>
             </h4>
             <p class="lead Perusahaan-IT">
                 {{cp.judul_cp}}

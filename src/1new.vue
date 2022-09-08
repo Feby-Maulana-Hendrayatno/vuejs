@@ -10,23 +10,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
             <li class="active">
               <a href="#" class="nav-link">
                 Beranda
               </a>
             </li>
             <li>
-              <!-- <router-link to="/contact">Contact</router-link> -->
-              <a href="#tentang_kami" class="nav-link">Tentang Kami</a>
+              <a href="tentang_kami" class="nav-link">Tentang Kami</a>
             </li>
             <li>
-              <a href="#layanan" class="nav-link">Layanan</a>
+              <a href="#" class="nav-link">Layanan</a>
             </li>
             <li>
-              <a href="#produk" class="nav-link">Produk</a>
+              <a href="#" class="nav-link">Produk</a>
             </li>
             <li>
-              <a href="#contact" class="nav-link">Contact Us</a>
+              <a href="#" class="nav-link">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -46,7 +48,7 @@
 
 
 
-<!-- 
+
   <div class="home">
     <Carousel
       :navigation="true"
@@ -57,59 +59,29 @@
       v-slot="{ currentSlide }"
     >
       
-      <Slide v-for="(slide, index) in carousel" :key="index.id">
+      <Slide v-for="(slide, index) in carousel" :key="index">
         <div v-show="currentSlide === index + 1" class="slide-info">
           <img :src="slide.foto" alt="" />
         </div>
       </Slide>
     </Carousel>
-  </div> -->
-
-
-
-
-
-
-
-
-<main>
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel"  >
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner" style="height:620px" margin="10px">
-      <div class="carousel-item active" v-for="cr in carousel" :key="cr.id">
-        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-        <img :src="cr.foto" style="height:620px;" >
-        <div class="container">
-          <div class="carousel-caption text-end" >
-            <img :src="cr.icon" style="height:80px; " class="text-start">
-            <div class="container">
-              <div class="row">
-                <div class="col-8"> &nbsp</div>
-                <div class="col-4"><p>{{cr.deksripsi}}</p></div>
-                <!-- <div class="col-lg-2">
-                  <p> {{cr.deksripsi}}</p>
-                </div> -->
-              </div>
-            </div>
-            <p><a :href="cr.link" class="btn btn-lg btn-primary">{{cr.nm_link}}</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
-</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -145,16 +117,14 @@
   
   <TentangKami />
   <br>
-  <br><br>
-  <Layanan  />
+  <Layanan />
   <PerencanaanStrategi />
 </div>
 <br>
 <!-- End Background -->
 <Footers />
-<br>
-<br>
 <Produk />
+
 
 <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -277,6 +247,8 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
 // }
 // end font
 
+
+
 </style>
 
 <style scoped>
@@ -385,7 +357,7 @@ export default {
     },
 
     async getCarousel(){
-        let url = 'http://127.0.0.1:8000/api/carousel1/';
+        let url = 'http://127.0.0.1:8000/api/carousel/';
         await axios.get(url).then(response => {
         this.carousel = response.data.carousel;
         console.log(this.carousel);
@@ -393,7 +365,9 @@ export default {
         console.log(error);
       });
     }
+  
   },
+ 
 
 
   

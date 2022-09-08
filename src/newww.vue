@@ -1,4 +1,5 @@
 <template>
+
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info static-top">
       <div class="container-fluid">
@@ -10,23 +11,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
             <li class="active">
               <a href="#" class="nav-link">
                 Beranda
               </a>
             </li>
             <li>
-              <!-- <router-link to="/contact">Contact</router-link> -->
-              <a href="#tentang_kami" class="nav-link">Tentang Kami</a>
+              <a href="tentang_kami" class="nav-link">Tentang Kami</a>
             </li>
             <li>
-              <a href="#layanan" class="nav-link">Layanan</a>
+              <a href="#" class="nav-link">Layanan</a>
             </li>
             <li>
-              <a href="#produk" class="nav-link">Produk</a>
+              <a href="#" class="nav-link">Produk</a>
             </li>
             <li>
-              <a href="#contact" class="nav-link">Contact Us</a>
+              <a href="#" class="nav-link">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -46,7 +49,7 @@
 
 
 
-<!-- 
+
   <div class="home">
     <Carousel
       :navigation="true"
@@ -55,15 +58,15 @@
       :timeout="5000"
       class="carousel"
       v-slot="{ currentSlide }"
-    >
+    > 
       
-      <Slide v-for="(slide, index) in carousel" :key="index.id">
+              <Slide v-for="(slide, index) in layanan" :key="index">
         <div v-show="currentSlide === index + 1" class="slide-info">
-          <img :src="slide.foto" alt="" />
+          <img :src="slide.icon" alt="" />
         </div>
       </Slide>
     </Carousel>
-  </div> -->
+  </div>
 
 
 
@@ -72,44 +75,100 @@
 
 
 
-<main>
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel"  >
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner" style="height:620px" margin="10px">
-      <div class="carousel-item active" v-for="cr in carousel" :key="cr.id">
-        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-        <img :src="cr.foto" style="height:620px;" >
-        <div class="container">
-          <div class="carousel-caption text-end" >
-            <img :src="cr.icon" style="height:80px; " class="text-start">
-            <div class="container">
-              <div class="row">
-                <div class="col-8"> &nbsp</div>
-                <div class="col-4"><p>{{cr.deksripsi}}</p></div>
-                <!-- <div class="col-lg-2">
-                  <p> {{cr.deksripsi}}</p>
-                </div> -->
-              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <main>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p>Some representative placeholder content for the first slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
             </div>
-            <p><a :href="cr.link" class="btn btn-lg btn-primary">{{cr.nm_link}}</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
           </div>
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</main>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -142,19 +201,60 @@
 
 
 <div class="background">
-  
+  <br>
+  <br>
+  <br>
+  <Ok />
+  <br>
   <TentangKami />
   <br>
-  <br><br>
-  <Layanan  />
+  
+
+
+
+
+
+
+
+
+
+
+
+  <br>
+  <Layanan />
   <PerencanaanStrategi />
 </div>
 <br>
 <!-- End Background -->
 <Footers />
+<div class="container">
+        <div class="row" >
+            <div class="col" v-for="foot1 in carousel" :key="foot1.id" data-aos="fade-down" data-aos-duration="800">
+            <img :src="foot1.foto"  class="rounded mx-auto d-block"  width="70" height="70 " >
+                <div class="card-body">
+                    <p class="card-text text-center">
+                    {{foot1.foto}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 <br>
 <br>
+<div class="container">
+        <div class="row" >
+            <div class="col" v-for="foot in footer" :key="foot.id" data-aos="fade-down" data-aos-duration="800">
+            <img :src="foot.icon" class="rounded mx-auto d-block"  width="70" height="70 " >
+                <div class="card-body">
+                    <p class="card-text text-center">
+                    {{foot.deskripsi_footer}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 <Produk />
+
 
 <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -169,7 +269,9 @@
     </div>
   </div>
 </div> 
+
 <br>
+
 </template>
 
 
@@ -212,9 +314,6 @@ letter-spacing: 0.1em; */
 nav.navbar.navbar-expand-lg.navbar-dark.static-top{
   background-color: #67C6EF;
 }
-
-
-
 
 
 .carousel {
@@ -277,10 +376,13 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
 // }
 // end font
 
+
+
 </style>
 
 <style scoped>
   @import "css/carousel.css";
+  @import "css/carousel.rtl.css";
   @import "css/project.css";
 </style>
 
@@ -290,8 +392,10 @@ import Slide from "./components/Slide.vue";
 import Produk from "@/components/page/Produk.vue";
 import TentangKami from "@/components/page/TentangKami.vue";
 import Footers from "@/components/page/Footer.vue";
+import Ok from "@/components/page/Ok.vue";
 import PerencanaanStrategi from "@/components/page/PerencanaanStrategi.vue";
 import Layanan from "@/components/page/Layanan.vue";
+
 import AOS from 'aos' 
 import axios from 'axios';
 
@@ -299,9 +403,9 @@ export default {
     data(){
         return{
         // footer:Array,
-
         carousel:Array,
-        layanan: Array
+        layanan:{}
+
         }
     },
     
@@ -314,6 +418,7 @@ export default {
     Footers,
     PerencanaanStrategi,
     Layanan,
+    // Carousel2,
   },
 
 
@@ -325,10 +430,9 @@ export default {
 
   created ( ) {
     AOS.init();
-    this.getCarousel();
-    this.getLayanan();
     // this.getFooter();
-
+    // this.getCarousel();
+    this.getLayanan();
   },
 
     methods: {
@@ -385,15 +489,17 @@ export default {
     },
 
     async getCarousel(){
-        let url = 'http://127.0.0.1:8000/api/carousel1/';
+        let url = 'http://127.0.0.1:8000/api/carousel/';
         await axios.get(url).then(response => {
-        this.carousel = response.data.carousel;
-        console.log(this.carousel);
+        this.footer = response.data.footer;
+        console.log(this.footer);
       }).catch(error => {
         console.log(error);
       });
     }
+  
   },
+
 
 
   
