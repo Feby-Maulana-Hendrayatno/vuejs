@@ -395,14 +395,6 @@ export default {
     }
   },
 
-
-  
-
-  // mounted() {
-  //   console.log('Contact List Component mounted')
-  // },
-
-
 };
 
 
