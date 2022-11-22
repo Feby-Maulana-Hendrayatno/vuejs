@@ -30,7 +30,7 @@ import { ref, onMounted } from "vue";
 export default {
   props: ["startAutoPlay", "timeout", "navigation", "pagination"],
   setup(props) {
-     const currentSlide = ref(1);
+    const currentSlide = ref(1);
     const getSlideCount = ref(null);
     const autoPlayEnabled = ref(
       props.startAutoPlay === undefined ? true : props.startAutoPlay

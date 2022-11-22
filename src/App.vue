@@ -1,177 +1,13 @@
 <template>
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info static-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/logo.png" alt="..." height="36">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ms-auto">
-            <li class="active">
-              <a href="#" class="nav-link">
-                Beranda
-              </a>
-            </li>
-            <li>
-              <!-- <router-link to="/contact">Contact</router-link> -->
-              <a href="#tentang_kami" class="nav-link">Tentang Kami</a>
-            </li>
-            <li>
-              <a href="#layanan" class="nav-link">Layanan</a>
-            </li>
-            <li>
-              <a href="#produk" class="nav-link">Produk</a>
-            </li>
-            <li>
-              <a href="#contact" class="nav-link">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-  <div class="home">
-    <Carousel
-      :navigation="true"
-      :pagination="true"
-      :startAutoPlay="false"
-      :timeout="5000"
-      class="carousel"
-      v-slot="{ currentSlide }"
-    >
-      
-      <Slide v-for="(slide, index) in carousel" :key="index.id">
-        <div v-show="currentSlide === index + 1" class="slide-info">
-          <img :src="slide.foto" alt="" />
-        </div>
-      </Slide>
-    </Carousel>
-  </div> -->
-
-
-
-
-
-
-
-
-<main>
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel"  >
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner" style="height:620px" margin="10px">
-      <div class="carousel-item active" v-for="cr in carousel" :key="cr.id">
-        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-        <img :src="cr.foto" style="height:620px;" >
-        <div class="container">
-          <div class="carousel-caption text-end" >
-            <img :src="cr.icon" style="height:80px; " class="text-start">
-            <div class="container">
-              <div class="row">
-                <div class="col-8"> &nbsp</div>
-                <div class="col-4"><p>{{cr.deksripsi}}</p></div>
-                <!-- <div class="col-lg-2">
-                  <p> {{cr.deksripsi}}</p>
-                </div> -->
-              </div>
-            </div>
-            <p><a :href="cr.link" class="btn btn-lg btn-primary">{{cr.nm_link}}</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="background">
-  
+  <Navbar />
+  <Carousel />
   <SpesialisasiKami />
-  <br>
-  <br><br>
-  <Layanan  />
-  <PerencanaanStrategi />
-</div>
-<br>
-<!-- End Background -->
-<Footers />
-<br>
-<br>
-<Produk />
-
-<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="./assets/wildlife_animal.png" class="modal-img" alt="modal img">
-      </div>
-    </div>
-  </div>
-</div> 
-<br>
+    <Layanan  />
+    <TentangKami />
+  <Footers />
+  <Produk />
+  <FooterAsli />
 </template>
-
 
 
 
@@ -181,8 +17,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-
 #app {
   /* font-family: Avenir, Helvetica, Arial, sans-serif; */
   /* font-family: Montserrat; */
@@ -191,37 +25,24 @@
   text-align: center;
   /* color: #FFFFFF; */
 }
-
-
-
-
-
 p.lead.Perusahaan-IT{
   color: #4D4D4F;
   font-weight: 380;
   /*
 font-size: 20px;
 line-height: 30px;
-
 display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.1em; */
 }
-
 nav.navbar.navbar-expand-lg.navbar-dark.static-top{
   background-color: #67C6EF;
 }
-
-
-
-
-
 .carousel {
   position: relative;
   max-height: 95vh;
   height: 100vh;
-
   .slide-info {
     position: absolute;
     top: 0;
@@ -229,7 +50,6 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
     width: 100%;
     max-height: 100%;
     height: 100%;
-
     img {
       min-width: 100%;
       height: 100%;
@@ -238,30 +58,19 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
     }
   }
 }
-
-
-
 .background {
-  background-color: #FEFEFE;
+  background-color: #ff1616;
     // background-color: #F6F6F6;
 }
-
-
-
-
-
 @media screen and (max-width: 600px) {
   .container {
     font-size: 15px;
   }
-
   .container.row.col.h
   {
     font-size: 10px;
   }
 }
-
-
 //font
 // @media (min-width: 1200px) {
 //   .responsive-font-example {
@@ -269,14 +78,12 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
 //     font-weight: bold;
 //   }
 // }
-
 // @media (max-width: 1199.98px) {
 //   .responsive-font-example {
 //     font-size: 20px;
 //   }
 // }
 // end font
-
 </style>
 
 <style scoped>
@@ -285,116 +92,35 @@ nav.navbar.navbar-expand-lg.navbar-dark.static-top{
 </style>
 
 <script>
-import Carousel from "./components/Carousel.vue";
-import Slide from "./components/Slide.vue";
-import Produk from "@/components/page/Produk.vue";
+// import Carousel from "./components/Carousel.vue";
+// import Slide from "./components/Slide.vue";
+import Carousel from "./components/page/Carousel.vue";
+import Produk from "@/components/page/Proyek.vue";
 import SpesialisasiKami from "@/components/page/SpesialisasiKami.vue";
+import Navbar from "@/components/page/Navbar.vue";
 import Footers from "@/components/page/Footer.vue";
-import PerencanaanStrategi from "@/components/page/PerencanaanStrategi.vue";
+import TentangKami from "@/components/page/TentangKami.vue";
 import Layanan from "@/components/page/Layanan.vue";
-import AOS from 'aos' 
-import axios from 'axios';
+import FooterAsli from "@/components/page/Footer1.vue";
+import Footer from "@/components/page/Footer.vue";
+
+// import AOS from 'aos' 
+// import axios from 'axios';
 
 export default {
-    data(){
-        return{
-        // footer:Array,
-
-        carousel:Array,
-        layanan: Array
-        }
-    },
-    
   name: "Home",
   components: {
-    Carousel, 
-    Slide,
+    Navbar,
+    Carousel,
+    // Slide,
     Produk,
     SpesialisasiKami,
     Footers,
-    PerencanaanStrategi,
+    TentangKami,
     Layanan,
-  },
-
-
-  setup() {
-    const carouselSlides = ["qjual_1", "qjual_2", "qjual_3"];
-
-    return { carouselSlides };
-  },
-
-  created ( ) {
-    AOS.init();
-    this.getCarousel();
-    this.getLayanan();
-    // this.getFooter();
-
-  },
-
-    methods: {
-    async getContacts(){
-        let url = 'http://127.0.0.1:8000/api/contacts';
-        await axios.get(url).then(response => {
-        this.contacts = response.data.contacts;
-        console.log(this.contacts);
-      }).catch(error => {
-        console.log(error);
-      });
-    },
-
-    async getTentangKami(){
-        let url = 'http://127.0.0.1:8000/api/tentang/';
-        await axios.get(url).then(response => {
-        this.SpesialisasiKami = response.data.SpesialisasiKami;
-        console.log(this.SpesialisasiKami);
-      }).catch(error => {
-        console.log(error);
-      });
-    },
-
-    async getLayanan(){
-        let url = 'http://127.0.0.1:8000/api/layanan/';
-        await axios.get(url).then(response => {
-        this.layanan = response.data.layanan;
-        console.log(this.layanan);
-      }).catch(error => {
-        console.log(error);
-      });
-    },
-
-
-    getProduk(){
-        let url = 'http://127.0.0.1:8000/api/produk/';
-        axios.get(url).then(response => {
-        this.produk = response.data.produk;
-        console.log(this.produk);
-      }).catch(error => {
-        console.log(error);
-      });
-    },
-
-
-    async getFooter(){
-        let url = 'http://127.0.0.1:8000/api/footer/';
-        await axios.get(url).then(response => {
-        this.footer = response.data.footer;
-        console.log(this.footer);
-      }).catch(error => {
-        console.log(error);
-      });
-    },
-
-    async getCarousel(){
-        let url = 'http://127.0.0.1:8000/api/carousel1/';
-        await axios.get(url).then(response => {
-        this.carousel = response.data.carousel;
-        console.log(this.carousel);
-      }).catch(error => {
-        console.log(error);
-      });
-    }
-  },
-
+    FooterAsli,
+    Footer
+},
 };
 
 

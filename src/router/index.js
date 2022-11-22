@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Produk from '../components/page/Produk.vue'
+import Proyek from '../components/page/Proyek.vue'
 
 const routes = [
   {
@@ -20,15 +20,30 @@ const routes = [
     component: () => import('../components/page/Layanan.vue')
   },
   {
-    path: '/produk',
-    name: 'produk',
-    component: () => import('../components/page/Produk.vue')
+    path: '/proyek',
+    name: 'proye',
+    component: () => import('../components/page/Proyek.vue')
   },
   {
-    path: '/contact',
-    name: 'contact',
+    path: '/footer',
+    name: 'footer',
     component: () => import('../components/page/Footer.vue')
-  }
+  },
+  {
+    path: '/carousel',
+    name: 'carousel',
+    component: () => import('../components/page/Carousel.vue')
+  },
+  {
+    path: '/navbar',
+    name: 'navbar',
+    component: () => import('../components/page/Navbar.vue')
+  },
+  {
+    path: '/tentang_kami',
+    name: 'tentang kami',
+    component: () => import('../components/page/TentangKami.vue')
+  },
 
 
 
